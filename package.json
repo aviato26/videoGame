@@ -1,0 +1,25 @@
+{
+  "name": "canvasgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jscript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aviato26/videoGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aviato26/videoGame/issues"
+  },
+  "homepage": "https://github.com/aviato26/videoGame#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0"
+  }
+}
