@@ -9,9 +9,9 @@ let chatterPillar = {
   jumpHeight: 0,
   color: 'green',
 
-  drawAndMoveSlug: function(){
+  drawAndMoveSlug: function(height = this.y){
     c.beginPath();
-    c.bezierCurveTo(this.tail, this.y, this.x, this.y-80, this.x, this.y)
+    c.bezierCurveTo(this.tail, this.y, this.x, height-80, this.x, this.y)
     c.stroke()
     c.fillStyle = this.color
     c.closePath()

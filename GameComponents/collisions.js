@@ -41,3 +41,15 @@ let collisions = () => {
     chatterPillar.velY += -10
   }
 }
+
+// the function for wall collision and crawling effect
+
+let wallCrawling = (a, b) => {
+  if(a < 0){
+    chatterPillar.x = 0;
+    chatterPillar.velX = 0;
+  } else if(a > ctx.width){
+    chatterPillar.x = ctx.width;
+    chatterPillar.velX = 0;
+  }
+}

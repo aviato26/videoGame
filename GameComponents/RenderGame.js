@@ -20,9 +20,11 @@ let animate = () => {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, ctx.width, ctx.height);
   collisions();
+  wallCrawling(chatterPillar.x, chatterPillar.y)
   chatterPillar.jumping();
   chatterPillar.addXvelocity();
   chatterPillar.drawAndMoveSlug();
-  boss.drawAndMoveSlug();
+  boss.drawAndMoveSlug(230);
+  boss.attack()
 }
 animate();

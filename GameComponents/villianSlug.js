@@ -4,15 +4,30 @@
 
 let boss = Object.create(chatterPillar);
 
-boss.x = 700;
+boss.x = 1100;
 boss.y = 300;
 boss.velX = 0;
 boss.velY = 0;
-boss.tail = 380;
+boss.tail = 980;
 boss.color = 'black';
 boss.attack = function(){
-  if(this.x > chatterPillar.x){
-    this.velX += 0.009;
-    this.x += -this.velX;
+  if(this.x < chatterPillar.x - 15){
+    if(this.tail <= this.x - 220){
+      this.tail += 50
+    } else if (this.tail > this.x - 310){
+      this.velX += 20
+      this.x += 4
+    }
   }
+  else if(this.x > chatterPillar.x - 10){
+      if(this.tail >= this.x + 220){
+        this.tail -= 50
+      } else if (this.tail < this.x + 310){
+        this.velX -= 20
+        this.x -= 4
+    }
+  }
+  else {
+      this.x = this.x;
+    }
 }
