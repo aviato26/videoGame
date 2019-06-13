@@ -10,8 +10,16 @@ boss.velX = 0;
 boss.velY = 0;
 boss.tail = 980;
 boss.color = 'black';
+boss.turn = false;
+
 boss.attack = function(){
-  if(this.x < chatterPillar.x - 15){
+
+  if(this.x < chatterPillar.x - 45){
+    if(this.turn !== true){
+      this.turn = true
+      this.tail = this.x - 20
+      this.x = this.tail + 100
+    }
     if(this.tail <= this.x - 220){
       this.tail += 50
     } else if (this.tail > this.x - 310){
@@ -20,6 +28,11 @@ boss.attack = function(){
     }
   }
   else if(this.x > chatterPillar.x - 10){
+      if(this.turn !== false){
+        this.turn = false;
+        this.tail = this.x + 20
+        this.x = this.tail - 100
+      }
       if(this.tail >= this.x + 220){
         this.tail -= 50
       } else if (this.tail < this.x + 310){
