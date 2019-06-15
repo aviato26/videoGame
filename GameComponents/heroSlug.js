@@ -1,7 +1,7 @@
 
 let chatterPillar = {
   x: 195,
-  y: 300,
+  y: window.innerHeight - 30,
   tail: 40,
   velY: 0,
   velX: 0,
@@ -67,7 +67,7 @@ let chatterPillar = {
         }
       }
       if(this.y > 310){
-        this.y = 315
+        this.y = window.innerHeight - 30
         }
     },
 
