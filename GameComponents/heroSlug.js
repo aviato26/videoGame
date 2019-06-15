@@ -1,7 +1,7 @@
 
 let chatterPillar = {
   x: 195,
-  y: 300,
+  y: window.innerHeight - 30,
   tail: 40,
   velY: 0,
   velX: 0,
@@ -58,7 +58,7 @@ let chatterPillar = {
 
   jumping: function(){
       if(this.jump){
-        this.velY += 6.234234
+        this.velY += 6
         this.x += this.velX;
         this.tail += this.velX;
       if(this.y < this.jumpHeight){
@@ -66,8 +66,8 @@ let chatterPillar = {
         this.velY *= -0.4
         }
       }
-      if(this.y > 310){
-        this.y = 315
+      if(this.y > window.innerHeight - 60){
+        this.y = window.innerHeight - 30
         }
     },
 
