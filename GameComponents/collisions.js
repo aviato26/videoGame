@@ -3,9 +3,14 @@ let collisions = () => {
   // drawing the ledges
 
   homeLedge.drawLedge(100,window.innerHeight - 150,300,10);
+<<<<<<< HEAD
   aboutLedge.drawLedge(500,window.innerHeight - 250,300,10);
   contactLedge.drawLedge(900,window.innerHeight - 350,300,10);
 
+=======
+  aboutLedge.drawLedge(300,window.innerHeight - 250,300,10);
+  contactLedge.drawLedge(500,window.innerHeight - 350,300,10);
+>>>>>>> defc0498aa7cd7166b7fea8ebf509c94eb61d7d7
 
   // checking to see if the slug is off either side of the ledges and if so adding gravity to fall off ledge
 
