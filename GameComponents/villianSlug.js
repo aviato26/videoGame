@@ -4,11 +4,7 @@
 
 let boss = Object.create(chatterPillar);
 
-<<<<<<< HEAD
-boss.x = 500;
-=======
 boss.x = 1100;
->>>>>>> defc0498aa7cd7166b7fea8ebf509c94eb61d7d7
 boss.y = window.innerHeight - 30;
 boss.velX = 0;
 boss.velY = 0;
