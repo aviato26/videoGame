@@ -24,10 +24,6 @@ let animate = () => {
   chatterPillar.jumping();
   chatterPillar.addXvelocity();
   chatterPillar.drawAndMoveSlug();
-<<<<<<< HEAD
-  boss.drawAndMoveSlug(880);
-=======
-  boss.drawAndMoveSlug(230);
->>>>>>> defc0498aa7cd7166b7fea8ebf509c94eb61d7d7
+  boss.drawAndMoveSlug(780);
 }
 animate();
